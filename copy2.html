@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="Open_form()">Form</button>
+    <div id="container">
+        <p>Name <input type="text"></p>
+        <p>Password <input type="password"></p>
+        <p>Email <input type="email">
+
+        </p>
+        <button>Submit</button>
+        <button onclick="Close_form()">close</button>
+    </div>
+    <script>
+        function Open_form(){
+            let x=document.getElementById("container")
+            x.style.display="block"
+        }
+        function Close_form(){
+            let x=document.getElementById("container")
+            x.style.display="none"
+        }
+    </script>
+</body>
+</html>
